@@ -1,55 +1,15 @@
 import React from 'react'
 import Header from '../others/Header'
+import CreateTask from '../others/CreateTask'
+import AllTask from '../others/AllTask'
 const AdminDashboard = () => {
   return (
     <div className='h-screen w-full p-7 '>
         <Header />
 
-
-        <div>
-            <form className='flex flex-wrap w-full  items-start justify-between'>
-
-              <div className='w-1/2'>
-                 <div>
-                <h3 className='text-sm text-gray-300 mb-0.5'>Task Title</h3>
-                <input 
-                className='text-sm py-1 px-5 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4' 
-                type="text" placeholder='Make A UI Design' 
-                />
-              </div>
-
-                 <div >
-                 <h3 className='text-sm text-gray-300 mb-0.5'>Date</h3>
-                <input 
-                 className='text-sm py-1 px-5 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4' 
-                type='date' />
-              </div>
-
-              <div>
-                 <h3 className='text-sm text-gray-300 mb-0.5'>Assign To</h3>
-                <input
-                 className='text-sm py-1 px-5 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4' 
-                  type='text' placeholder='employee name' />
-              </div>
-             
-            <div>
-               <h3 className='text-sm text-gray-300 mb-0.5'>Category</h3>
-                <input
-                 className='text-sm py-1 px-5 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4' 
-                type='text' placeholder='design , dev ,etc' />
-
-            </div>
-              </div>
-             
-                <div className='w-1/2'>
-                  <h3>Description</h3>
-                <textarea name='' id='' cols='30' rows='10'></textarea>
-                </div>
-             
-               
-                <button>Create Task</button>
-            </form>
-        </div>
+        <CreateTask />
+        
+        <AllTask />
     </div>
   )
 }
