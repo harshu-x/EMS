@@ -19,7 +19,8 @@ const CreateTask = () => {
             console.log(elem);
          }
        })
-
+        
+       localStorage.setItem('employees',JSON.stringify(data));
        setTaskTitle('')
        setCategory('')
        setAssignTo('')
