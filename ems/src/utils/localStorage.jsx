@@ -1,8 +1,17 @@
 const employees = [
   {
     id: 1,
+    firstName: "Rahul",
     email: "employee1@example.com",
     password: "1234",
+
+    taskCounts:{
+      active:1,
+      newTask:1,
+      completed:1,
+      failed:1
+    },
+
     tasks: [
       {
         active: true,
@@ -36,10 +45,20 @@ const employees = [
       }
     ]
   },
+
   {
     id: 2,
+    firstName: "Amit",
     email: "employee2@example.com",
     password: "1234",
+
+    taskCounts:{
+      active:2,
+      newTask:1,
+      completed:1,
+      failed:1
+    },
+
     tasks: [
       {
         active: true,
@@ -83,10 +102,20 @@ const employees = [
       }
     ]
   },
+
   {
     id: 3,
+    firstName: "Neha",
     email: "employee3@example.com",
     password: "1234",
+
+    taskCounts:{
+      active:2,
+      newTask:1,
+      completed:1,
+      failed:0
+    },
+
     tasks: [
       {
         active: true,
@@ -120,10 +149,20 @@ const employees = [
       }
     ]
   },
+
   {
     id: 4,
+    firstName: "Karan",
     email: "employee4@example.com",
     password: "1234",
+
+    taskCounts:{
+      active:1,
+      newTask:1,
+      completed:1,
+      failed:1
+    },
+
     tasks: [
       {
         active: true,
@@ -157,10 +196,20 @@ const employees = [
       }
     ]
   },
+
   {
     id: 5,
+    firstName: "Priya",
     email: "employee5@example.com",
     password: "1234",
+
+    taskCounts:{
+      active:2,
+      newTask:1,
+      completed:1,
+      failed:0
+    },
+
     tasks: [
       {
         active: true,
@@ -203,7 +252,6 @@ const admin = [
     password: "1234"
   }
 ];
-
 
 export const setLocalStorage =() =>{
    localStorage.setItem('employees',JSON.stringify(employees))
